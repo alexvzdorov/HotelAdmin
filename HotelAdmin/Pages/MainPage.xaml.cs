@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using HotelAdmin.Models;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Navigation;
@@ -24,7 +25,7 @@ namespace HotelAdmin.Pages
 
         private void listView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(PageControl.AboutRoomPage);
+            NavigationService.Navigate(new AboutRoomPage(listView.SelectedItem as Room));
         }
     }
 }

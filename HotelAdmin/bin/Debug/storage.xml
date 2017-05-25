@@ -20,7 +20,7 @@
       <Class>Comfort</Class>
       <PlaceQty>1</PlaceQty>
       <Price>1500</Price>
-      <PreviewPic>..\..\Images\sample.jpg</PreviewPic>
+      <PreviewPic>D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\bin\Debug\\Images\sample.jpg</PreviewPic>
       <BreakfastIncl>false</BreakfastIncl>
       <WifiIncl>false</WifiIncl>
       <TvIncl>false</TvIncl>

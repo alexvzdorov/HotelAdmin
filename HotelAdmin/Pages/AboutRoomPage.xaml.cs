@@ -11,11 +11,13 @@ namespace HotelAdmin.Pages
     /// </summary>
     public partial class AboutRoomPage : Page
     {
-        public static Room Room { get; set; }
         public AboutRoomPage()
         {
             InitializeComponent();
-            DataContext = Room;
+        }
+        public AboutRoomPage(Room r) : this()
+        {
+            DataContext = r;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
