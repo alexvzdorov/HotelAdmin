@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelAdmin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,12 +28,28 @@ namespace HotelAdmin.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             NavigationService.Navigate(PageControl.AddCardPage);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.AboutRoomPage);
+            try
+            {
+                var g = new Guest
+                {
+                    FirstName = textBoxName.Text,
+                    Email = textBoxEmail.Text,
+                    LastName = textBoxSurname.Text,
+                    Pass = passBox.Password,
+                    Phone = textBoxPhone.Text
+                };
+                NavigationService.Navigate(new AddCardPage(g));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

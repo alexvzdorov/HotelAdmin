@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelAdmin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,15 @@ namespace HotelAdmin.Pages
     /// </summary>
     public partial class OrderDetailPage : Page
     {
+        private Guest _guest;
         public OrderDetailPage()
         {
             InitializeComponent();
+        }
+
+        public OrderDetailPage(Guest guest)
+        {
+            _guest = guest;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

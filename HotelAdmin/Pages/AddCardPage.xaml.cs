@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelAdmin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,37 @@ namespace HotelAdmin.Pages
     /// </summary>
     public partial class AddCardPage : Page
     {
+        private Guest _guest;
         public AddCardPage()
         {
             InitializeComponent();
         }
 
+        public AddCardPage(Guest guest)
+        {
+            _guest = guest;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.OrderDetailPage);
+            try
+            {
+                var payment = new Payment
+                {
+                    CardNumber = textBoxCardNumber.Text,
+                    Code = textBoxCVV.Text,
+                    Owner = textBoxOwner.Text,
+                    TillMonth = int.Parse(textBoxTillMonth.Text),
+                    TillYear = int.Parse(textBoxTillYear.Text)
+                };
+                _guest.PaymentInfo = payment;
+                MainWindow.Storage.Guests.Add(_guest);
+                NavigationService.Navigate(new OrderDetailPage(_guest));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -10,7 +10,6 @@ namespace HotelAdmin.Models
     public class Storage
     {
         public List<Guest> Guests { get; set; }
-        public List<Payment> Payments { get; set; }
         public List<Room> Rooms { get; set; }
         public List<Reservation> Reservations { get; set; }
     }

@@ -34,11 +34,10 @@
         <Button Grid.Row="8" Margin="5" Click="Button_Click_1">Назад</Button>
         <Button Grid.Row="8" Margin="5" Grid.Column="1" Click="Button_Click">Далее</Button>
 
-        <TextBox Margin="5" Grid.Row="2" Grid.Column="1"/>
-        <TextBox Margin="5" Grid.Row="3" Grid.Column="1"/>
-        <TextBox Margin="5" Grid.Row="4" Grid.Column="1"/>
-        <TextBox Margin="5" Grid.Row="5" Grid.Column="1"/>
-        <TextBox Margin="5" Grid.Row="6" Grid.Column="1"/>
-
+        <TextBox Margin="5" Grid.Row="2" Grid.Column="1" Name="textBoxName"/>
+        <TextBox Margin="5" Grid.Row="3" Grid.Column="1" Name="textBoxSurname"/>
+        <TextBox Margin="5" Grid.Row="4" Grid.Column="1" Name="textBoxEmail"/>
+        <TextBox Margin="5" Grid.Row="5" Grid.Column="1" Name="textBoxPhone"/>
+        <PasswordBox Margin="5" Grid.Row="6" Grid.Column="1" Name="passBox"/>
     </Grid>
 </Page>
