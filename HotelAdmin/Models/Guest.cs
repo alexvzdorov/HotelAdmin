@@ -1,51 +1,60 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Text.RegularExpressions;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace HotelAdmin.Models
 {
     class Guest
     {
-        private string _firstName;
-
-        public string FirstName
-        {
-            get { return _firstName; }
-            set { _firstName = value; }
-        }
-
-        private string _lastName;
-
-        public string LastName
-        {
-            get { return _lastName; }
-            set { _lastName = value; }
-        }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
         private string _email;
-
         public string Email
         {
             get { return _email; }
-            set { _email = value; }
+            set
+            {
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+                Match match = regex.Match(value);
+                if (match.Success)
+                    _email = value;
+                else
+                    throw new FormatException("Неправильный формат email");
+            }
         }
 
         private string _phone;
-
         public string Phone
         {
             get { return _phone; }
-            set { _phone = value; }
+            set
+            {
+                Regex regex = new Regex(@"^(\+){0,1}(\d]){11}$");
+                Match match = regex.Match(value);
+                if (match.Success)
+                    _phone = value;
+                else
+                    throw new FormatException("Неправильный формат номера телефона");
+                _phone = value;
+            }
         }
 
-        private Payment _paymentInfo;
+        public Payment PaymentInfo { get; set; }
 
-        public Payment PaymentInfo
+        private string _pass;
+
+        public string Pass
         {
-            get { return _paymentInfo; }
-            set { _paymentInfo = value; }
+            get { return _pass; }
+            set
+            {
+                MD5 md5 = MD5.Create();
+                var hash = md5.ComputeHash(Encoding.ASCII.GetBytes(value));
+                _pass = Convert.ToBase64String(hash);
+            }
         }
+
     }
 }
