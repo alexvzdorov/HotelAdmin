@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace HotelAdmin.Models
 {
-    class Reservation
+    [Serializable]
+    public class Reservation
     {
         private static int _counter = 1;
-        public int ReserveNumber { get; private set; }
+        public int ReserveNumber { get; set; }
 
-        public Room Room { get; private set; }
+        public Room Room { get; set; }
 
-        public Guest Guest { get; private set; }
+        public Guest Guest { get; set; }
 
-        public DateTime StartPeriod { get; private set; }
+        public DateTime StartPeriod { get; set; }
 
-        public DateTime EndPeriod { get; private set; }
+        public DateTime EndPeriod { get; set; }
 
-        public Status Status { get; private set; }
+        public Status Status { get; set; }
 
         public Reservation(Room room, Guest guest, DateTime startPeriod, DateTime endPeriod, bool paid)
         {
@@ -36,6 +37,11 @@ namespace HotelAdmin.Models
             EndPeriod = endPeriod;
             Status = paid ? Status.Paid : Status.Prepared;
             ReserveNumber = _counter++;
+        }
+
+        public Reservation()
+        {
+
         }
     }
 

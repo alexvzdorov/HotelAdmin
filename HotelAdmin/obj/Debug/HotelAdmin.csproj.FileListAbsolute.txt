@@ -25,3 +25,4 @@ D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\AddCardPage.g.cs
 D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\OrderDetailPage.g.cs
 D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\AddCardPage.baml
 D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\OrderDetailPage.baml
+D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.csprojResolveAssemblyReference.cache

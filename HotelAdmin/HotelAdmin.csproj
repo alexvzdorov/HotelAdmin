@@ -54,14 +54,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Storage.cs" />
     <Compile Include="Pages\AddCardPage.xaml.cs">
       <DependentUpon>AddCardPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OrderDetailPage.xaml.cs">
       <DependentUpon>OrderDetailPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\AboutRoomViewModel.cs" />
-    <Compile Include="ViewModels\RoomViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

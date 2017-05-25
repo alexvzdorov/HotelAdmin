@@ -5,7 +5,8 @@ using System.Text;
 
 namespace HotelAdmin.Models
 {
-    class Guest
+    [Serializable]
+    public class Guest
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -31,7 +32,7 @@ namespace HotelAdmin.Models
             get { return _phone; }
             set
             {
-                Regex regex = new Regex(@"^(\+){0,1}(\d]){11}$");
+                Regex regex = new Regex(@"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$");
                 Match match = regex.Match(value);
                 if (match.Success)
                     _phone = value;

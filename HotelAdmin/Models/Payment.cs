@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace HotelAdmin.Models
 {
-    class Payment
+    [Serializable]
+    public class Payment
     {
         public CardType CardType { get; set; }
 

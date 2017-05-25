@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HotelAdmin.Models
 {
-    class Room
+    [Serializable]
+    public class Room
     {
         public int Number { get; set; }
 
@@ -36,17 +37,8 @@ namespace HotelAdmin.Models
             }
         }
 
-        private List<string> _pictures = new List<string>();
-
-        public IEnumerable<string> Pictures
-        {
-            get { return _pictures; }
-        }
-
-        public void AddPicture(string path)
-        {
-            _pictures.Add(path);
-        }
+        public List<string> Pictures { get; set; }
+        public string PreviewPic { get; set; }
 
         public string Description { get; set; }
 

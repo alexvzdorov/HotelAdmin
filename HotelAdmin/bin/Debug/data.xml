@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RoomCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Rooms>
+    <Room>
+      <Number>1</Number>
+      <Class>Standart</Class>
+      <PlaceQty>2</PlaceQty>
+      <Price>1500</Price>
+      <Description>First number</Description>
+      <BreakfastIncl>true</BreakfastIncl>
+      <WifiIncl>true</WifiIncl>
+      <TvIncl>true</TvIncl>
+      <FridgeIncl>true</FridgeIncl>
+      <PhoneIncl>true</PhoneIncl>
+      <SafeIncl>false</SafeIncl>
+    </Room>
+  </Rooms>
+</RoomCollection>
