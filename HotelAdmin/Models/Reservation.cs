@@ -8,42 +8,39 @@ namespace HotelAdmin.Models
 {
     class Reservation
     {
+        private static int _counter = 1;
+        public int ReserveNumber { get; private set; }
+
         public Room Room { get; private set; }
 
         public Guest Guest { get; private set; }
 
-        private DateTime _startPeriod;
-        public DateTime StartPeriod
-        {
-            get { return _startPeriod; }
-        }
+        public DateTime StartPeriod { get; private set; }
 
-        private DateTime _endPeriod;
-        public DateTime EndPeriod
-        {
-            get { return _endPeriod; }
-        }
+        public DateTime EndPeriod { get; private set; }
 
-        public Status Status { get; set; }
+        public Status Status { get; private set; }
 
-        public Reservation(Room room, Guest guest, DateTime startPeriod, DateTime endPeriod)
+        public Reservation(Room room, Guest guest, DateTime startPeriod, DateTime endPeriod, bool paid)
         {
-            if (_startPeriod < DateTime.Now)
+            if (startPeriod < DateTime.Now)
                 throw new ArgumentException("Период брони не может начаться раньше текущего времени");
-            if (_endPeriod < _startPeriod)
+            if (endPeriod < startPeriod)
                 throw new ArgumentException("Конец периода брони не может быть раньше начала брони");
             if (room == null || guest == null)
                 throw new ArgumentNullException();
 
             Room = room;
             Guest = guest;
-            _startPeriod = startPeriod;
-            _endPeriod = endPeriod;
+            StartPeriod = startPeriod;
+            EndPeriod = endPeriod;
+            Status = paid ? Status.Paid : Status.Prepared;
+            ReserveNumber = _counter++;
         }
     }
 
     public enum Status
     {
-        NotPaid, Paid
+        Prepared, Paid, Canceled
     }
 }
