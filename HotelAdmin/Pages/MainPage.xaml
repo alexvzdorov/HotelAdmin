@@ -11,14 +11,33 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="42"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="HotelAdmin"/>
-        
-        <ListBox Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Выберите номер" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
+        <Button Grid.Column="1" Click="Button_Click" Margin="2">Login</Button>
+        <ListView Name="listView" Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Picture}" Margin="5" Stretch="Fill"/>
+                        <StackPanel Grid.Column="1" Margin="5" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding Number}" FontSize="18"/>
+                            <TextBlock Text="{Binding Class}"/>
+                            <TextBlock Text="{Binding PlaceQty}"/>
+                        </StackPanel>
+                        <TextBlock Grid.Column="2" Text="{Binding Price}" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

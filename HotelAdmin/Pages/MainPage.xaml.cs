@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HotelAdmin.Models;
+using HotelAdmin.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,23 @@ namespace HotelAdmin.Pages
         public MainPage()
         {
             InitializeComponent();
+
+            var rvm = new RoomViewModel
+            {
+                Price = "1000 р.",
+                Class = Class.Comfort.ToString(),
+                Number = "Номер: 314",
+                PlaceQty = "Количество мест: 2",
+                Picture = @"D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\Images\sample.jpg"
+            };
+
+            listView.Items.Add(rvm);
+            listView.Items.Add(rvm);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.LoginPage);
         }
     }
 }

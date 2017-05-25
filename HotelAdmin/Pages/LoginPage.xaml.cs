@@ -24,5 +24,16 @@ namespace HotelAdmin.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.MainPage);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+           // if (textBoxLogin.Text == "Admin" && textBoxPass.Text == "12345") 
+                
+        }
     }
 }

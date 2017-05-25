@@ -36,7 +36,7 @@ namespace HotelAdmin.Models
             }
         }
 
-        private List<string> _pictures;
+        private List<string> _pictures = new List<string>();
 
         public IEnumerable<string> Pictures
         {
@@ -46,6 +46,25 @@ namespace HotelAdmin.Models
         public void AddPicture(string path)
         {
             _pictures.Add(path);
+        }
+
+        public string Description { get; set; }
+
+        public bool BreakfastIncl { get; set; }
+        public bool WifiIncl { get; set; }
+        public bool TvIncl { get; set; }
+        public bool FridgeIncl { get; set; }
+        public bool PhoneIncl { get; set; }
+        public bool SafeIncl { get; set; }
+        public bool AllIncl
+        {
+            get
+            {
+                if (BreakfastIncl && WifiIncl && TvIncl && FridgeIncl && PhoneIncl && SafeIncl)
+                    return true;
+                else
+                    return false;
+            }
         }
     }
 

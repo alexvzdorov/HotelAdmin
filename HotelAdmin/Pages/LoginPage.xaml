@@ -9,6 +9,36 @@
       Title="LoginPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="61*"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24" Margin="44,42,44,51" Width="212">Вход для администратора</TextBlock>
+        <StackPanel Grid.Row="1">
+            <Grid Margin="5,5,5,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center">Логин:</TextBlock>
+                <TextBox Grid.Column="1" Margin="5,0" Name="textBoxLogin"/>
+            </Grid>
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center">Пароль:</TextBlock>
+                <TextBox Grid.Column="1" Margin="5,0" Name="textBoxPass"/>
+            </Grid>
+            <Grid Margin="5,20,5,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button HorizontalAlignment="Center" Height="20" Width="80" Click="Button_Click">Назад</Button>
+                <Button HorizontalAlignment="Center" Height="20" Width="160" Click="Button_Click" Grid.Column="1">Войти</Button>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Page>
