@@ -1,4 +1,4 @@
-﻿<Page x:Class="HotelAdmin.Pages.ReservePage"
+﻿<Page x:Class="HotelAdmin.Pages.AddCardPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:HotelAdmin.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="ReservePage">
+      Title="AddCardPage">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -25,20 +25,20 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.ColumnSpan="2" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">Бронирование</TextBlock>
-        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold">Информация о госте</TextBlock>
-        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">имя:</TextBlock>
-        <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">фамилия:</TextBlock>
-        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">email:</TextBlock>
-        <TextBlock Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">телефон:</TextBlock>
-        <TextBlock Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center">придумайте пароль:</TextBlock>
-        <Button Grid.Row="8" Margin="5" Click="Button_Click_1">Назад</Button>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold">Информация об оплате</TextBlock>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">Тип карты:</TextBlock>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center">Номер карты:</TextBlock>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">Действительна до (месяц):</TextBlock>
+        <TextBlock Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">Действительна до (год):</TextBlock>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center">CVV код:</TextBlock>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center">Держатель карты:</TextBlock>
+        <Button Grid.Row="8" Margin="5,5,5,0" Height="20" VerticalAlignment="Top" Click="Button_Click_1">Назад</Button>
         <Button Grid.Row="8" Margin="5" Grid.Column="1" Click="Button_Click">Далее</Button>
 
-        <TextBox Margin="5" Grid.Row="2" Grid.Column="1"/>
+        <ComboBox Margin="5" Grid.Row="2" Grid.Column="1"/>
         <TextBox Margin="5" Grid.Row="3" Grid.Column="1"/>
-        <TextBox Margin="5" Grid.Row="4" Grid.Column="1"/>
-        <TextBox Margin="5" Grid.Row="5" Grid.Column="1"/>
+        <TextBox Margin="5" Grid.Row="4" Grid.Column="1" MaxLength="2"/>
+        <TextBox Margin="5" Grid.Row="5" Grid.Column="1" MaxLength="4"/>
         <TextBox Margin="5" Grid.Row="6" Grid.Column="1"/>
-
     </Grid>
 </Page>

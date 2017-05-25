@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace HotelAdmin.Pages
 {
     /// <summary>
-    /// Interaction logic for ReservePage.xaml
+    /// Interaction logic for OrderDetailPage.xaml
     /// </summary>
-    public partial class ReservePage : Page
+    public partial class OrderDetailPage : Page
     {
-        public ReservePage()
+        public OrderDetailPage()
         {
             InitializeComponent();
         }
@@ -28,11 +28,6 @@ namespace HotelAdmin.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(PageControl.AddCardPage);
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(PageControl.AboutRoomPage);
         }
     }
 }

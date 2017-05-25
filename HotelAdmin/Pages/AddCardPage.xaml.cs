@@ -16,13 +16,23 @@ using System.Windows.Shapes;
 namespace HotelAdmin.Pages
 {
     /// <summary>
-    /// Interaction logic for PaymentsPage.xaml
+    /// Interaction logic for AddCardPage.xaml
     /// </summary>
-    public partial class PaymentsPage : Page
+    public partial class AddCardPage : Page
     {
-        public PaymentsPage()
+        public AddCardPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.OrderDetailPage);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.ReservePage);
         }
     }
 }

@@ -27,13 +27,13 @@
         <ListView Grid.Row="1" ItemsSource="{Binding Pictures}" Margin="2">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding}"/>
+                    <Image Source="{Binding}" HorizontalAlignment="Center"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
         <StackPanel Grid.Column="1"  Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="3">
             <Button Margin="2" Width="80" Click="Button_Click">Назад</Button>
-            <Button Margin="2" Width="120">Забронировать</Button>
+            <Button Margin="2" Width="120" Click="Button_Click_1">Забронировать</Button>
         </StackPanel>
     </Grid>
 </Page>
