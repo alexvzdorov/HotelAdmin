@@ -37,7 +37,7 @@
                     <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
                 <Button HorizontalAlignment="Center" Height="20" Width="80" Click="Button_Click">Назад</Button>
-                <Button HorizontalAlignment="Center" Height="20" Width="160" Click="Button_Click" Grid.Column="1">Войти</Button>
+                <Button HorizontalAlignment="Center" Height="20" Width="160" Grid.Column="1" Click="Button_Click_1">Войти</Button>
             </Grid>
         </StackPanel>
     </Grid>

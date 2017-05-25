@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
         <TextBlock Text="Выберите номер" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
         <Button Grid.Column="1" Click="Button_Click" Margin="2">Login</Button>
-        <ListView Name="listView" Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch">
+        <ListView Name="listView" Grid.Row="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch" MouseDoubleClick="listView_MouseDoubleClick">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>

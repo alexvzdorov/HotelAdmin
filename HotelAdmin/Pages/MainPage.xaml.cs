@@ -43,5 +43,10 @@ namespace HotelAdmin.Pages
         {
             NavigationService.Navigate(PageControl.LoginPage);
         }
+
+        private void listView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.AboutRoomPage);
+        }
     }
 }

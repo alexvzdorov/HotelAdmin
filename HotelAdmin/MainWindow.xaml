@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" MinHeight="350" MinWidth="525">
     <Grid>
+        <!--<StackPanel>
+            <StackPanel Orientation="Horizontal" Visibility="Collapsed" Name="adminBar">
+                <Button Padding="5">Добавить номер</Button>
+                <Button Padding="5">Изменить номер</Button>
+                <Button Padding="5">Удалить номер</Button>
+                <Button Padding="5">Бронирование</Button>
+                <Button Padding="5">Оплата</Button>
+            </StackPanel>
+        </StackPanel>-->
         <Frame Name="frameMain" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
