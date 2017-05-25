@@ -28,7 +28,7 @@ namespace HotelAdmin.Pages
             InitializeComponent();
         }
 
-        public OrderDetailPage(Guest guest, Room room)
+        public OrderDetailPage(Guest guest, Room room) : this()
         {
             _guest = guest;
             _room = room;

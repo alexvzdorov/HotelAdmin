@@ -28,7 +28,7 @@ namespace HotelAdmin.Pages
             InitializeComponent();
         }
 
-        public AddCardPage(Guest guest, Room room)
+        public AddCardPage(Guest guest, Room room) : this()
         {
             _guest = guest;
             _room = room;
@@ -58,7 +58,7 @@ namespace HotelAdmin.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.ReservePage);
+            NavigationService.Navigate(PageControl.MainPage);
         }
     }
 }

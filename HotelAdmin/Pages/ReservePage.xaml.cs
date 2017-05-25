@@ -34,11 +34,6 @@ namespace HotelAdmin.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.AddCardPage);
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
             try
             {
                 var g = new Guest
@@ -55,6 +50,12 @@ namespace HotelAdmin.Pages
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.MainPage);
         }
     }
 }
