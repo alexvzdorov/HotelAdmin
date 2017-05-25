@@ -21,14 +21,19 @@ namespace HotelAdmin.Pages
     /// </summary>
     public partial class ReservePage : Page
     {
+        private Room _room;
         public ReservePage()
         {
             InitializeComponent();
         }
 
+        public ReservePage(Room room)
+        {
+            _room = room;
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             NavigationService.Navigate(PageControl.AddCardPage);
         }
 
@@ -44,7 +49,7 @@ namespace HotelAdmin.Pages
                     Pass = passBox.Password,
                     Phone = textBoxPhone.Text
                 };
-                NavigationService.Navigate(new AddCardPage(g));
+                NavigationService.Navigate(new AddCardPage(g, _room));
             }
             catch (Exception ex)
             {

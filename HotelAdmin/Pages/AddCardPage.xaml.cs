@@ -22,14 +22,16 @@ namespace HotelAdmin.Pages
     public partial class AddCardPage : Page
     {
         private Guest _guest;
+        private Room _room;
         public AddCardPage()
         {
             InitializeComponent();
         }
 
-        public AddCardPage(Guest guest)
+        public AddCardPage(Guest guest, Room room)
         {
             _guest = guest;
+            _room = room;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,7 +48,7 @@ namespace HotelAdmin.Pages
                 };
                 _guest.PaymentInfo = payment;
                 MainWindow.Storage.Guests.Add(_guest);
-                NavigationService.Navigate(new OrderDetailPage(_guest));
+                NavigationService.Navigate(new OrderDetailPage(_guest, _room));
             }
             catch (Exception ex)
             {

@@ -22,19 +22,37 @@ namespace HotelAdmin.Pages
     public partial class OrderDetailPage : Page
     {
         private Guest _guest;
+        private Room _room;
         public OrderDetailPage()
         {
             InitializeComponent();
         }
 
-        public OrderDetailPage(Guest guest)
+        public OrderDetailPage(Guest guest, Room room)
         {
             _guest = guest;
+            _room = room;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.AddCardPage);
+            try
+            {
+                var r = new Reservation
+                {
+                    Room = _room,
+                    Guest = _guest,
+                    StartPeriod = (DateTime)datePickerStart.SelectedDate,
+                    EndPeriod = (DateTime)datePickerEnd.SelectedDate,
+                };
+                MainWindow.Storage.Reservations.Add(r);
+                MessageBox.Show("Номер успешно зарезервирован");
+                NavigationService.Navigate(PageControl.AddCardPage);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

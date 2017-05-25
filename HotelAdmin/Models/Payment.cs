@@ -18,12 +18,17 @@ namespace HotelAdmin.Models
             get { return _cardNumber; }
             set
             {
-                Regex regex = new Regex(@"^(\d]){16}$");
-                Match match = regex.Match(value);
-                if (match.Success)
-                    _cardNumber = value;
-                else
+                try
+                {
+                    long.Parse(value);
+                }
+                catch
+                {
                     throw new FormatException("Неправильный формат номера карты");
+                }
+                if (value.Length>16 || value.Length < 12)
+                    throw new FormatException("Неправильный формат номера карты");
+                _cardNumber = value;
             }
         }
 
