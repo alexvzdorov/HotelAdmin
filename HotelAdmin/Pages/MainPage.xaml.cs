@@ -15,7 +15,7 @@ namespace HotelAdmin.Pages
         {
             InitializeComponent();
 
-            listView.ItemsSource = MainWindow.Storage.Rooms;
+            listView.ItemsSource = Storage.Instance.Rooms;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

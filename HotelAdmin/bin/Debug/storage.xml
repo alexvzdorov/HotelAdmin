@@ -20,10 +20,10 @@
       <Class>Comfort</Class>
       <PlaceQty>1</PlaceQty>
       <Price>1500</Price>
-      <PreviewPic>D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\bin\Debug\\Images\sample.jpg</PreviewPic>
-      <BreakfastIncl>false</BreakfastIncl>
-      <WifiIncl>false</WifiIncl>
-      <TvIncl>false</TvIncl>
+      <PreviewPic>http://aph45.ru/uploads/userfiles/18f58469ccab57187f68a8a5bebd617c.jpg</PreviewPic>
+      <BreakfastIncl>true</BreakfastIncl>
+      <WifiIncl>true</WifiIncl>
+      <TvIncl>true</TvIncl>
       <FridgeIncl>false</FridgeIncl>
       <PhoneIncl>false</PhoneIncl>
       <SafeIncl>false</SafeIncl>
@@ -33,6 +33,7 @@
       <Class>Standart</Class>
       <PlaceQty>2</PlaceQty>
       <Price>1800</Price>
+      <PreviewPic>http://www.drakino.com/upload/imagelib/1269948166hotel_polet8.jpg</PreviewPic>
       <BreakfastIncl>false</BreakfastIncl>
       <WifiIncl>false</WifiIncl>
       <TvIncl>false</TvIncl>
@@ -45,6 +46,7 @@
       <Class>Econom</Class>
       <PlaceQty>3</PlaceQty>
       <Price>1200</Price>
+      <PreviewPic>http://hotel-spasskaya.ru/sites/default/files/other_image/twin2.JPG</PreviewPic>
       <BreakfastIncl>false</BreakfastIncl>
       <WifiIncl>false</WifiIncl>
       <TvIncl>false</TvIncl>
@@ -52,5 +54,20 @@
       <PhoneIncl>false</PhoneIncl>
       <SafeIncl>false</SafeIncl>
     </Room>
+    <Room>
+      <Number>4</Number>
+      <Class>Comfort</Class>
+      <PlaceQty>1</PlaceQty>
+      <Price>2500</Price>
+      <Description>Пример описания</Description>
+      <BreakfastIncl>true</BreakfastIncl>
+      <WifiIncl>true</WifiIncl>
+      <TvIncl>true</TvIncl>
+      <FridgeIncl>true</FridgeIncl>
+      <PhoneIncl>true</PhoneIncl>
+      <SafeIncl>false</SafeIncl>
+    </Room>
   </Rooms>
+  <Reservations />
+  <Payments />
 </Storage>

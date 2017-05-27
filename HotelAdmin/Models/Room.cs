@@ -37,7 +37,6 @@ namespace HotelAdmin.Models
             }
         }
 
-        public List<string> Pictures { get; set; }
         public string PreviewPic { get; set; }
 
         public string Description { get; set; }

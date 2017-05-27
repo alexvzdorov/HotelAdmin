@@ -26,3 +26,32 @@ D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\OrderDetailPage.g.cs
 D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\AddCardPage.baml
 D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\Pages\OrderDetailPage.baml
 D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.csprojResolveAssemblyReference.cache
+D:\dev\$\HotelAdmin\HotelAdmin\bin\Debug\HotelAdmin.exe.config
+D:\dev\$\HotelAdmin\HotelAdmin\bin\Debug\HotelAdmin.exe
+D:\dev\$\HotelAdmin\HotelAdmin\bin\Debug\HotelAdmin.pdb
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\MainWindow.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\AboutRoomPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\AddCardPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\LoginPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\MainPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\OrderDetailPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\ReservePage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\App.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin_MarkupCompile.cache
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin_MarkupCompile.lref
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\MainWindow.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\AboutRoomPage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\AddCardPage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\LoginPage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\MainPage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\OrderDetailPage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\ReservePage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.g.resources
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.Properties.Resources.resources
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.csproj.GenerateResource.Cache
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.exe
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\HotelAdmin.pdb
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\AdminPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\AdminPage.baml
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\RoomManagementPage.g.cs
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\Pages\RoomManagementPage.baml

@@ -32,10 +32,12 @@ namespace HotelAdmin.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (textBoxLogin.Text == "Admin" && textBoxPass.Text == "12345")
+            if (textBoxLogin.Text == "Admin" && textBoxPass.Password == "12345")
             {
-                NavigationService.Navigate(PageControl.MainPage);
+                NavigationService.Navigate(PageControl.AdminPage);
             }
+            else
+                MessageBox.Show("Неправильный логин или пароль.");
         }
     }
 }

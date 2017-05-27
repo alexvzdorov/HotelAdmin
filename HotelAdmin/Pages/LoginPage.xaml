@@ -29,7 +29,7 @@
                     <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock HorizontalAlignment="Center">Пароль:</TextBlock>
-                <TextBox Grid.Column="1" Margin="5,0" Name="textBoxPass"/>
+                <PasswordBox Grid.Column="1" Margin="5,0" Name="textBoxPass"/>
             </Grid>
             <Grid Margin="5,20,5,0">
                 <Grid.ColumnDefinitions>

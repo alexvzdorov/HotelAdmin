@@ -16,13 +16,23 @@ using System.Windows.Shapes;
 namespace HotelAdmin.Pages
 {
     /// <summary>
-    /// Interaction logic for AddRoomPage.xaml
+    /// Interaction logic for AdminPage.xaml
     /// </summary>
-    public partial class AddRoomPage : Page
+    public partial class AdminPage : Page
     {
-        public AddRoomPage()
+        public AdminPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.MainPage);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(PageControl.RoomManagementPage);
         }
     }
 }

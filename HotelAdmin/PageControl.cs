@@ -12,10 +12,24 @@ namespace HotelAdmin
         private static MainPage _mainPage = new MainPage();
         private static LoginPage _loginPage = new LoginPage();
         private static AboutRoomPage _aboutRoomPage = new AboutRoomPage();
-        private static AddRoomPage _addRoomPage = new AddRoomPage();
         private static AddCardPage _addCardPage = new AddCardPage();
         private static ReservePage _reservePage = new ReservePage();
         private static OrderDetailPage _orderDetailPage = new OrderDetailPage();
+        private static AdminPage _adminPage = new AdminPage();
+        private static RoomManagementPage _roomManagementPage = new RoomManagementPage();
+
+        public static RoomManagementPage RoomManagementPage
+        {
+            get { return _roomManagementPage = new RoomManagementPage(); }
+            set { _roomManagementPage =  value; }
+        }
+
+
+        public static AdminPage AdminPage
+        {
+            get { return _adminPage; }
+            set { _adminPage = value; }
+        }
 
         public static OrderDetailPage OrderDetailPage
         {
@@ -44,14 +58,6 @@ namespace HotelAdmin
             get
             {
                 return _aboutRoomPage;
-            }
-        }
-
-        public static AddRoomPage AddRoomPage
-        {
-            get
-            {
-                return _addRoomPage;
             }
         }
 

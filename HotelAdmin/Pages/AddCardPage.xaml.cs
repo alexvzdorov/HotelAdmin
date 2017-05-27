@@ -47,7 +47,7 @@ namespace HotelAdmin.Pages
                     TillYear = int.Parse(textBoxTillYear.Text)
                 };
                 _guest.PaymentInfo = payment;
-                MainWindow.Storage.Guests.Add(_guest);
+                Storage.Instance.Guests.Add(_guest);
                 NavigationService.Navigate(new OrderDetailPage(_guest, _room));
             }
             catch (Exception ex)

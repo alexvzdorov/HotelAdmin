@@ -54,9 +54,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Models\Storage.cs" />
+    <Compile Include="Storage.cs" />
     <Compile Include="Pages\AddCardPage.xaml.cs">
       <DependentUpon>AddCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OrderDetailPage.xaml.cs">
       <DependentUpon>OrderDetailPage.xaml</DependentUpon>
@@ -82,7 +85,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\AddRoomPage.xaml">
+    <Page Include="Pages\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,6 +105,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\RoomManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Guest.cs" />
@@ -112,9 +119,6 @@
     <Compile Include="Pages\AboutRoomPage.xaml.cs">
       <DependentUpon>AboutRoomPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AddRoomPage.xaml.cs">
-      <DependentUpon>AddRoomPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -123,6 +127,9 @@
     </Compile>
     <Compile Include="Pages\ReservePage.xaml.cs">
       <DependentUpon>ReservePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RoomManagementPage.xaml.cs">
+      <DependentUpon>RoomManagementPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

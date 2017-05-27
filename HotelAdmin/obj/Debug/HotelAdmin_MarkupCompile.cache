@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\obj\Debug\
+D:\dev\$\HotelAdmin\HotelAdmin\obj\Debug\
 HotelAdmin
 none
 false
 DEBUG;TRACE
-D:\DEv\VS PROJECTS\HotelAdmin\HotelAdmin\App.xaml
-8-57254437
+D:\dev\$\HotelAdmin\HotelAdmin\App.xaml
+9-932844093
 
-191744547502
+2060337713
 13738642453
-MainWindow.xaml;Pages\AboutRoomPage.xaml;Pages\AddCardPage.xaml;Pages\AddRoomPage.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\OrderDetailPage.xaml;Pages\ReservePage.xaml;
+MainWindow.xaml;Pages\AboutRoomPage.xaml;Pages\AddCardPage.xaml;Pages\AdminPage.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\OrderDetailPage.xaml;Pages\ReservePage.xaml;Pages\RoomManagementPage.xaml;
 
 False
 

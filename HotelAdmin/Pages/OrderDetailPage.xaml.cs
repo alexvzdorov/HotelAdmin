@@ -45,7 +45,7 @@ namespace HotelAdmin.Pages
                     StartPeriod = (DateTime)datePickerStart.SelectedDate,
                     EndPeriod = (DateTime)datePickerEnd.SelectedDate,
                 };
-                MainWindow.Storage.Reservations.Add(r);
+                Storage.Instance.Reservations.Add(r);
                 MessageBox.Show("Номер успешно зарезервирован");
                 NavigationService.Navigate(PageControl.AddCardPage);
             }
