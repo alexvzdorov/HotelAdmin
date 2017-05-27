@@ -16,6 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition/>
+            <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Выберите номер" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"/>
         <Button Grid.Column="1" Click="Button_Click" Margin="2">Login</Button>
@@ -51,5 +52,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <TextBox Grid.Row="2" Text="Поиск по цене до" Name="textBoxPrice"/>
+        <Button Grid.Row="2" Grid.Column="1" Name="buttonSearch" HorizontalAlignment="Left" Width="42" Click="buttonSearch_Click">
+            <Image Name="searchIcon" Source="http://s1.iconbird.com/ico/2013/9/452/w512h5121380477032search.png"/>
+        </Button>
     </Grid>
 </Page>
