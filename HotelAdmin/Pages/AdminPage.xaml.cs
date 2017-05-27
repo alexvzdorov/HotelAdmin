@@ -37,7 +37,7 @@ namespace HotelAdmin.Pages
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.ReserveManagementPage);
+            NavigationService.Navigate(new ReserveManagementPage());
         }
     }
 }

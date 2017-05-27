@@ -11,13 +11,15 @@ namespace HotelAdmin.Pages
     /// </summary>
     public partial class AboutRoomPage : Page
     {
+        private Room _room;
         public AboutRoomPage()
         {
             InitializeComponent();
         }
-        public AboutRoomPage(Room r) : this()
+        public AboutRoomPage(Room room) : this()
         {
-            DataContext = r;
+            _room = room;
+            DataContext = _room;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -27,7 +29,7 @@ namespace HotelAdmin.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(PageControl.ReservePage);
+            NavigationService.Navigate(new ReservePage(_room));
         }
     }
 }

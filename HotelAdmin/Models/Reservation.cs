@@ -9,7 +9,6 @@ namespace HotelAdmin.Models
     [Serializable]
     public class Reservation
     {
-        private static int _counter = 1;
         public int ReserveNumber { get; set; }
 
         public Room Room { get; set; }
@@ -36,13 +35,11 @@ namespace HotelAdmin.Models
             StartPeriod = startPeriod;
             EndPeriod = endPeriod;
             Status = paid ? Status.Paid : Status.Prepared;
-            ReserveNumber = _counter++;
+            ReserveNumber = new Random().Next(1000000);
         }
 
         public Reservation()
-        {
-
-        }
+        { }
     }
 
     public enum Status

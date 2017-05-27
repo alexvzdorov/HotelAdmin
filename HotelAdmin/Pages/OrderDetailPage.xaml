@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="OrderDetailPage">
 
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
@@ -34,10 +34,10 @@
         <Button Grid.Row="8" Margin="5" Click="Button_Click">Назад</Button>
         <Button Grid.Row="8" Margin="5" Grid.Column="1" Click="Button_Click">Оплатить</Button>
 
-        <TextBlock Margin="5" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock Margin="5" Grid.Row="2" Grid.Column="1" Name="textBlockRoom"/>
         <DatePicker Margin="5" Grid.Row="3" Grid.Column="1" Name="datePickerStart"/>
-        <DatePicker Margin="5" Grid.Row="4" Grid.Column="1" Name="datePickerEnd"/>
-        <TextBlock Margin="5" Grid.Row="5" Grid.Column="1"/>
-        <TextBlock Margin="5" Grid.Row="6" Grid.Column="1"/>
+        <DatePicker Margin="5" Grid.Row="4" Grid.Column="1" Name="datePickerEnd" CalendarClosed="datePickerEnd_CalendarClosed"/>
+        <TextBlock Margin="5" Grid.Row="5" Grid.Column="1" Name="textBlockNoches"/>
+        <TextBlock Margin="5" Grid.Row="6" Grid.Column="1" Name="textBlockPrice"/>
     </Grid>
 </Page>

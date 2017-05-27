@@ -57,6 +57,11 @@ namespace HotelAdmin.Models
                     return false;
             }
         }
+
+        public override string ToString()
+        {
+            return Number.ToString();
+        }
     }
 
     public enum Class

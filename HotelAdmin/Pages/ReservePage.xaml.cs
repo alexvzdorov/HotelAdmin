@@ -27,7 +27,7 @@ namespace HotelAdmin.Pages
             InitializeComponent();
         }
 
-        public ReservePage(Room room)
+        public ReservePage(Room room) : this()
         {
             _room = room;
         }

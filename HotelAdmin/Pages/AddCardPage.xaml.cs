@@ -44,7 +44,8 @@ namespace HotelAdmin.Pages
                     Code = textBoxCVV.Text,
                     Owner = textBoxOwner.Text,
                     TillMonth = int.Parse(textBoxTillMonth.Text),
-                    TillYear = int.Parse(textBoxTillYear.Text)
+                    TillYear = int.Parse(textBoxTillYear.Text),
+                    CardType = (comboBox.SelectedIndex == 0) ? CardType.Visa : CardType.Mastercard
                 };
                 _guest.PaymentInfo = payment;
                 Storage.Instance.Guests.Add(_guest);

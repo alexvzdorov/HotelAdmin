@@ -11,10 +11,10 @@ namespace HotelAdmin.Models
     [Serializable]
     public class Storage
     {
-        public List<Guest> Guests { get; set; }
-        public List<Room> Rooms { get; set; }
-        public List<Reservation> Reservations { get; set; }
-        public List<Payment> Payments { get; set; }
+        public List<Guest> Guests { get; set; } = new List<Guest>();
+        public List<Room> Rooms { get; set; } = new List<Room>();
+        public List<Reservation> Reservations { get; set; } = new List<Reservation>();
+        public List<Payment> Payments { get; set; } = new List<Payment>();
 
         private static Storage _storage;
         public static Storage Instance
@@ -95,6 +95,11 @@ namespace HotelAdmin.Models
                 };
                 Save();
             }
+        }
+
+        public void AddReservation(Reservation r)
+        {
+            Instance.Reservations.Add(r);
         }
     }
 }

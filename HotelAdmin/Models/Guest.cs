@@ -57,5 +57,9 @@ namespace HotelAdmin.Models
             }
         }
 
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName} {Email}";
+        }
     }
 }
