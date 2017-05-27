@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\dev\$\HotelAdmin\HotelAdmin\App.xaml
-9-932844093
+10-1077107915
 
-2060337713
+211048534243
 13738642453
-MainWindow.xaml;Pages\AboutRoomPage.xaml;Pages\AddCardPage.xaml;Pages\AdminPage.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\OrderDetailPage.xaml;Pages\ReservePage.xaml;Pages\RoomManagementPage.xaml;
+MainWindow.xaml;Pages\AboutRoomPage.xaml;Pages\AddCardPage.xaml;Pages\AdminPage.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\OrderDetailPage.xaml;Pages\ReserveManagementPage.xaml;Pages\ReservePage.xaml;Pages\RoomManagementPage.xaml;
 
 False
 

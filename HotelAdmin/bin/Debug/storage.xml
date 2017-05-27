@@ -47,25 +47,25 @@
       <PlaceQty>3</PlaceQty>
       <Price>1200</Price>
       <PreviewPic>http://hotel-spasskaya.ru/sites/default/files/other_image/twin2.JPG</PreviewPic>
-      <BreakfastIncl>false</BreakfastIncl>
-      <WifiIncl>false</WifiIncl>
-      <TvIncl>false</TvIncl>
-      <FridgeIncl>false</FridgeIncl>
-      <PhoneIncl>false</PhoneIncl>
-      <SafeIncl>false</SafeIncl>
-    </Room>
-    <Room>
-      <Number>4</Number>
-      <Class>Comfort</Class>
-      <PlaceQty>1</PlaceQty>
-      <Price>2500</Price>
-      <Description>Пример описания</Description>
       <BreakfastIncl>true</BreakfastIncl>
       <WifiIncl>true</WifiIncl>
       <TvIncl>true</TvIncl>
       <FridgeIncl>true</FridgeIncl>
       <PhoneIncl>true</PhoneIncl>
-      <SafeIncl>false</SafeIncl>
+      <SafeIncl>true</SafeIncl>
+    </Room>
+    <Room>
+      <Number>125</Number>
+      <Class>Comfort</Class>
+      <PlaceQty>2</PlaceQty>
+      <Price>2700</Price>
+      <PreviewPic>http://nomeraspb.com/images/hotel-zagorodnyii-02.jpg</PreviewPic>
+      <BreakfastIncl>true</BreakfastIncl>
+      <WifiIncl>true</WifiIncl>
+      <TvIncl>true</TvIncl>
+      <FridgeIncl>true</FridgeIncl>
+      <PhoneIncl>true</PhoneIncl>
+      <SafeIncl>true</SafeIncl>
     </Room>
   </Rooms>
   <Reservations />

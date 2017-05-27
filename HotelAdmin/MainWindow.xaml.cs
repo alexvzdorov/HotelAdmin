@@ -27,22 +27,17 @@ namespace HotelAdmin
         public MainWindow()
         {
             InitializeComponent();
-
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Storage));
-            StreamReader sr = new StreamReader("storage.xml");
-            Storage.Instance = (Storage)xmlSerializer.Deserialize(sr);
-            sr.Close();
-
-            frameMain.Navigate(new MainPage());
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Storage));
-            StreamWriter streamWriter = new StreamWriter("storage.xml");
-            xmlSerializer.Serialize(streamWriter, Storage.Instance);
+            Storage.Save();
+        }
 
-            streamWriter.Close();
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Storage.Load();
+            frameMain.Navigate(PageControl.MainPage);
         }
     }
 }

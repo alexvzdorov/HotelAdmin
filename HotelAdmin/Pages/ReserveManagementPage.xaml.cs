@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace HotelAdmin.Pages
 {
     /// <summary>
-    /// Interaction logic for RoomManagementPage.xaml
+    /// Interaction logic for ReserveManagementPage.xaml
     /// </summary>
-    public partial class RoomManagementPage : Page
+    public partial class ReserveManagementPage : Page
     {
-        public RoomManagementPage()
+        public ReserveManagementPage()
         {
             InitializeComponent();
 
@@ -35,7 +35,7 @@ namespace HotelAdmin.Pages
 
         private void SetupDataGrid()
         {
-            dataGrid.ItemsSource = Storage.Instance.Rooms;
+            dataGrid.ItemsSource = Storage.Instance.Reservations;
             dataGrid.CanUserSortColumns = true;
             dataGrid.CanUserResizeRows = true;
             dataGrid.CanUserDeleteRows = true;

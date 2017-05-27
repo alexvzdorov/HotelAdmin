@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PageControl.cs" />
+    <Compile Include="Pages\ReserveManagementPage.xaml.cs">
+      <DependentUpon>ReserveManagementPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Storage.cs" />
     <Compile Include="Pages\AddCardPage.xaml.cs">
       <DependentUpon>AddCardPage.xaml</DependentUpon>
@@ -101,6 +105,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ReserveManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ReservePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,7 +123,6 @@
     <Compile Include="Models\Payment.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Room.cs" />
-    <Compile Include="PageControl.cs" />
     <Compile Include="Pages\AboutRoomPage.xaml.cs">
       <DependentUpon>AboutRoomPage.xaml</DependentUpon>
     </Compile>

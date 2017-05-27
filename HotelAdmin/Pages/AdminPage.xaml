@@ -9,11 +9,11 @@
       Title="AdminPage" Width="370">
 
     <Grid>
-        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Padding="2" Margin="5" Click="Button_Click">Logout</Button>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Padding="2" Margin="5" Click="Button_Click">Выйти</Button>
         <TextBlock FontSize="18" HorizontalAlignment="Center" Margin="5">Кабинет администратора</TextBlock>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Margin="5" Click="Button_Click_1">Управление номерами</Button>
-            <Button Margin="5">Управление бронями</Button>
+            <Button Margin="5" Click="Button_Click_2">Управление бронями</Button>
         </StackPanel>
     </Grid>
 </Page>
